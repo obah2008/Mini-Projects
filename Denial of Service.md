@@ -34,7 +34,8 @@ After launching the attack, the target system slows down drastically due to the 
 
 ![Screenshot (76)](https://github.com/user-attachments/assets/1ee42a29-8d20-4c63-8031-9bb781dbf42d)
 
-
+## Blocking the Attacker's IP Address with Windows Firewall
+Now we have identified the attacker's IP address, we can create a new Windows firewall rule to block all traffic from that address. 
 
 
 

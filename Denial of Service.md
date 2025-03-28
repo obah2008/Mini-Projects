@@ -8,7 +8,6 @@ To achieve this, I'll be using Nmap (Network Mapper), a powerful network scannin
 
 - First, I'll scan for discoverable hosts on the network. In my case, the network address is 192.168.1.0/24, and I’ll run the following command:
 
-      ```
       nmap -sn -R 192.168.1.0/24
   1. The -sn flag performs a ping scan, identifying live hosts without scanning ports.
 

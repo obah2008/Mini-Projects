@@ -35,7 +35,20 @@ After launching the attack, the target system slows down drastically due to the 
 ![Screenshot (76)](https://github.com/user-attachments/assets/1ee42a29-8d20-4c63-8031-9bb781dbf42d)
 
 ## Blocking the Attacker's IP Address with Windows Firewall
-Now we have identified the attacker's IP address, we can create a new Windows firewall rule to block all traffic from that address. 
+Now we have identified the attacker's IP address, we can create a new Windows firewall rule to block all traffic from that address.
+
+To do this, I'll be using Command prompt to create a new windows firewall to block all traffic comming from the attacker's IP address.
+
+- Open up command prompt as administrator.
+
+- Create a new rule using
+
+  ``` bash
+   netsh advfirewall firewall add rule name="Block IP 192.168.1.9" dir=in action=block remoteip=192.168.1.9
+
+Now all inbound traffic coming from the attacker's IP address will be block. With that we have successfully simulated and stopped a DOS attack.
+
+
 
 
 

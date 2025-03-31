@@ -17,5 +17,12 @@ Step 1: Install Gophish
 ![image](https://github.com/user-attachments/assets/58015910-58fe-4bad-9a4f-fb67f454ffaa)
 
 Step 2: Crafting the Phishing Email
-Creating the email template: This is the actual email that will be sent to the target. On the **Email Templates** menu Create a new template. Chose a template name, envelope sender and subject. Obtain a Legitimate Email Template and paste it into the **Email content** section.
+Creating the Email Template: This is the actual email that will be sent to the target. On the Email Templates menu, create a new template. Choose a template name, envelope sender, and subject. Obtain a legitimate email template and paste it into the Email Content section.
+
+
+
+
+
+
+
 

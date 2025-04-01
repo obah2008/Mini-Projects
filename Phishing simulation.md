@@ -27,6 +27,6 @@ Creating the Landing Page: This is the webpage where victims will be redirected.
 Launch the campaign:
 
 ![image](https://github.com/user-attachments/assets/518ed824-7145-40ca-909c-95c2bcc8504e)
-
+ Now the phishing email has been successfully sent, it's time to head over to the target's gmail address
 
 

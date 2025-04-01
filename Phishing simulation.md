@@ -19,8 +19,10 @@ Step 1: Install Gophish
 Step 2: Crafting the Phishing Email
 Creating the Email Template: This is the actual email that will be sent to the target. On the Email Templates menu, create a new template. Choose a template name, envelope sender, and subject. Obtain a legitimate email template and paste it into the Email Content section.
 
+Creating the Sending Profile: This is the email account that the phishing emails will be sent from. On the Sending Profiles menu, create a new profile. Choose a profile name, enter the SMTP server, username, and password. Set the From Address and test the connection to ensure it works.
 
 
+Creating the Landing Page: This is the webpage where victims will be redirected. On the Landing Pages menu, create a new page. Choose a page name and import a legitimate login page. Enable Capture Submitted Data to store credentials.
 
 
 

@@ -6,11 +6,7 @@ The 8th wonder of the world.
 Have you ever wondered how organizations that manage millions of login credentials securely store passwords?  
 Or why older hashing algorithms like **MD5** are no longer considered secure?
 
-In this project, I’ll demonstrate the risks of weak hashing by:
 
-- Creating a list of passwords  
-- creating hashes for them using the **MD5** algorithm  
-- Cracking those hashes using **John the Ripper**, a powerful password cracking tool
 
 ### What is Hashing?
 
@@ -29,4 +25,18 @@ It's necessary for a variety of reasons, actually:
 
 
 ## Objectives
-As stated earlier the objectives of this are as follows
+As stated earlier the objectives of this are as follows:
+
+- Creating a list of passwords  
+- creating hashes for them using the **MD5** algorithm  
+- Cracking those hashes using **John the Ripper**, a powerful password cracking tool
+
+## Tools used
+For this project I'll be primarily using two tools
+
+-  **John the Ripper**: A powerful password cracking tool used to recover plaintexts from hashed passwords.  
+  It works by taking a list of possible passwords, hashing each one using the same algorithm (in this case, MD5), and comparing the result to the original hash.
+
+- **OpenSSL**: A tool used for cryptography, it's what we'll be using to create the MD5 hashes of the passwords
+
+## Step 1

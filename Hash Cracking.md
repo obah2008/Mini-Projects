@@ -39,4 +39,6 @@ For this project I'll be primarily using two tools
 
 - **OpenSSL**: A tool used for cryptography, it's what we'll be using to create the MD5 hashes of the passwords
 
+These are all tools that come pre-installed in kali linux(The operating system I'll be using)
+
 ## Step 1

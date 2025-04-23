@@ -60,7 +60,7 @@ done < passwords.txt > hashes.txt
 - The script above creates a file "hashes.txt" that contains the hashes. Now we've created the hashes it's time to move on to cracking them
 ![image](https://github.com/user-attachments/assets/d18d05dd-a405-4e38-a717-0ffb1f45f0b2)
 
-Step 2: Cracking the MD5 Hashes
+## Step 2: Cracking the MD5 Hashes
 For this step, I'll be using John the Ripper. John the Ripper works like Hydra, meaning it's more or less a bruteforce tool. But instead of trying a list of common passwords against online services, John the Ripper performs mainly cryptographic attacks, i.e., hash cracking and encrypted password cracking.
 
 John the ripper takes the 

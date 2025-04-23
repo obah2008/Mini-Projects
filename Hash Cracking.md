@@ -41,7 +41,8 @@ For this project I'll be primarily using two tools
 
 These are all tools that come pre-installed in kali linux(The operating system I'll be using)
 
-##
+## Scenario
+A mid-sized tech company stores stores thousands of login credentials and authentication passwords in their user database. To avoid storing the passwords in the clear, The company implemented hashing, but they unfortunately chose to use **MD5**, a rather outdated hashing algorithm
 
 ### Step 1: Creating the MD5 hashes
 First thing we need to do before we can properly emulate the above scenario is to create the Hash list from our passwords.txt file.

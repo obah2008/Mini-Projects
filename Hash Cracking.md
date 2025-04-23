@@ -88,4 +88,4 @@ We'll talk about those methods below.
 scrypt
 Argon2
 
-- Use Salting: Another thing the company could have done to mitigate the attack is salting. A salt is a random value added to a password before hashing, This would make attacks like the one we used above useless
+- Use Salting: Another thing the company could have done to mitigate the attack is salting. A salt is a random value added to a password before hashing, This would make attacks like the one we used above useless. Encryption algorithms like MD5 don't support this

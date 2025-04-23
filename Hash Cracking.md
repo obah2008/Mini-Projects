@@ -67,7 +67,9 @@ John the ripper takes a list of the most common passwords(like the rockyou.txt) 
 
 - Let's put that to practice by cracking the hashes.txt file
 - Assuming john the riper i already installed and you have a password list file we can run the command below to crack the hash. The command assumes the rock you.txt is still in it's default location
-  ```
-    john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
 
-![image](https://github.com/user-attachments/assets/491e3d49-84f1-4068-b0f7-342aabeccd25)
+       john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
+ 
+![image](https://github.com/user-attachments/assets/e5465e6e-7556-4a76-9de6-5cd39e0a9274)
+
+-And with that, we've successfully cracked the hashes

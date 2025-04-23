@@ -61,15 +61,24 @@ done < passwords.txt > hashes.txt
 ![image](https://github.com/user-attachments/assets/d18d05dd-a405-4e38-a717-0ffb1f45f0b2)
 
 ## Step 2: Cracking the MD5 Hashes
-For this step, I'll be using John the Ripper. John the Ripper works like Hydra, meaning it's more or less a bruteforce tool. But instead of trying a list of common passwords against online services, John the Ripper performs mainly cryptographic attacks, i.e., hash cracking and encrypted password cracking.
+For this step, I'll be using John the Ripper. John the Ripper works like Hydra, meaning it's more or less a bruteforce tool. But instead of trying a list of common passwords against online services, John the Ripper performs mainly cryptographic attacks, i.e, hash cracking and encrypted password cracking.
 
-John the ripper takes a list of the most common passwords(like the rockyou.txt) hashes them with the same hashing algotithm the hashes were created with and compares them.
+John the ripper takes a list of the most common passwords(like the rockyou.txt) hashes them with the same hashing algotithm the hashes were created with and compares the results.
 
 - Let's put that to practice by cracking the hashes.txt file
-- Assuming john the riper i already installed and you have a password list file we can run the command below to crack the hash. The command assumes the rock you.txt is still in it's default location
+- Assuming john the riper is already installed and you have a password list file, we can run the command below to crack the hashes. The command assumes the rock you.txt is still in it's default location
 
        john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
  
 ![image](https://github.com/user-attachments/assets/e5465e6e-7556-4a76-9de6-5cd39e0a9274)
 
--And with that, we've successfully cracked the hashes
+- And with that, we've successfully cracked the hashes
+
+Step 3: Mitigation
+Now that we've successfully performed the attack, we can circle back and evaluate what the company could have done to prevent this.
+
+Obviously, preventing the breach altogether would have been the best-case scenario. But in reality, breaches can and do happen — so the company should have implemented several mitigating techniques to reduce the impact.
+
+These methods wouldn't have stopped the breach itself, but they could have prevented the attackers from cracking the hashes even after gaining access.
+
+We'll talk about those methods below.

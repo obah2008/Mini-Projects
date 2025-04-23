@@ -74,7 +74,7 @@ John the ripper takes a list of the most common passwords(like the rockyou.txt) 
 
 - And with that, we've successfully cracked the hashes
 
-Step 3: Mitigation
+## Step 3: Mitigation
 Now that we've successfully performed the attack, we can circle back and evaluate what the company could have done to prevent this.
 
 Obviously, preventing the breach altogether would have been the best-case scenario. But in reality, breaches can and do happen — so the company should have implemented several mitigating techniques to reduce the impact.
@@ -82,3 +82,10 @@ Obviously, preventing the breach altogether would have been the best-case scenar
 These methods wouldn't have stopped the breach itself, but they could have prevented the attackers from cracking the hashes even after gaining access.
 
 We'll talk about those methods below.
+
+- Use secure hashing algorithms: The first solution to the company's dilemma Would be not to rely on a dated algorithm like MD5. The company instead should have used secure algorithms, which are resistant to brute-force attacks, Such as
+1.bcrypt
+scrypt
+Argon2
+
+- Use Salting: Another thing the company could have done to mitigate the attack is salting. A salt is a random value added to a password before hashing, This would make attacks like the one we used above useless

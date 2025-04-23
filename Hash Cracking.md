@@ -48,5 +48,12 @@ A mid sized company stores hundreds of passwords in it's user database. T avoid 
 First thing we need to do before we can properly emulate the above scenario is to create the Hash list from our passwords.txt file. We could do this in one of two ways; Create a script to hash each individual password or manually do it with OpenSSL.
 
 - To do that I'll be creating a script that hashes each password with OpenSSL successively
-- Assuming the passwords.txt file has already been created with the passwords in it. We can run the scipt below to read the Password.txt file hash all it's components and output it in hashes.txt
+- Assuming the passwords.txt file has already been created with the passwords in it. We can run the scipt below to read the Password.txt file, hash all its components and output it in hashes.txt
 
+<pre>#!/bin/bash while read -r password; do echo -n "$password" | openssl dgst -md5 | awk '{print $2}' done < passwords.txt > hashes.txt</pre>
+
+- The script above creates a file "hashes.txt" that contains the hashes. Now we've created the hashes it's time to move on to cracking them
+![image](https://github.com/user-attachments/assets/d18d05dd-a405-4e38-a717-0ffb1f45f0b2)
+
+### Step 2: Cracking the MD5 hashes
+For this step I'll be using John the ripper

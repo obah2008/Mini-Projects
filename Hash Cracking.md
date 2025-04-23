@@ -63,4 +63,11 @@ done < passwords.txt > hashes.txt
 ## Step 2: Cracking the MD5 Hashes
 For this step, I'll be using John the Ripper. John the Ripper works like Hydra, meaning it's more or less a bruteforce tool. But instead of trying a list of common passwords against online services, John the Ripper performs mainly cryptographic attacks, i.e., hash cracking and encrypted password cracking.
 
-John the ripper takes the 
+John the ripper takes a list of the most common passwords(like the rockyou.txt) hashes them with the same hashing algotithm the hashes were created with and compares them.
+
+- Let's put that to practice by cracking the hashes.txt file
+- Assuming john the riper i already installed and you have a password list file we can run the command below to crack the hash. The command assumes the rock you.txt is still in it's default location
+  ```
+    john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
+
+![image](https://github.com/user-attachments/assets/491e3d49-84f1-4068-b0f7-342aabeccd25)

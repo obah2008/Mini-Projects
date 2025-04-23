@@ -42,9 +42,11 @@ For this project I'll be primarily using two tools
 These are all tools that come pre-installed in kali linux(The operating system I'll be using)
 
 ## Scenario
-A mid sized company stores hundreds of passwords in it's user database. T avoid storing the login details in the clear, they implemented hashing, but chose to use **MD5** The company has recently suffered a data-breach in which the hashes  
+A mid sized company stores hundreds of passwords in it's user database. T avoid storing the login details in the clear, they implemented hashing, but chose to use **MD5**. The company has recently suffered a data-breach in which the hashes exfiltrated. 
 
 ### Step 1: Creating the MD5 hashes
-First thing we need to do before we can properly emulate the above scenario is to create the Hash list from our passwords.txt file.
+First thing we need to do before we can properly emulate the above scenario is to create the Hash list from our passwords.txt file. We could do this in one of two ways; Create a script to hash each individual password or manually do it with OpenSSL.
 
-- To do that I'll be creating a script that hashes each password with OpenSSL successively 
+- To do that I'll be creating a script that hashes each password with OpenSSL successively
+- Assuming the passwords.txt file has already been created with the passwords in it. We can run the scipt below to read the Password.txt file hash all it's components and output it in hashes.txt
+

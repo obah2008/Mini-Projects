@@ -41,4 +41,9 @@ For this project I'll be primarily using two tools
 
 These are all tools that come pre-installed in kali linux(The operating system I'll be using)
 
-## Step 1
+##
+
+### Step 1: Creating the MD5 hashes
+First thing we need to do before we can properly emulate the above scenario is to create the Hash list from our passwords.txt file.
+
+- To do that I'll be creating a script that hashes each password with OpenSSL successively 

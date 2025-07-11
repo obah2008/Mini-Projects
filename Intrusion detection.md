@@ -12,3 +12,5 @@ Not taking to account the Hypervisor(VMware) the tools I'll be using in this pro
 - Surricata: What did you expect the name of the project is literally intrusion detection with Surricata 
 - Atttack simulation tool: Undecided
 
+### Acknowledgments: This project was made possible through hackersploits Surricata guide video over on [Youtube](https://www.youtube.com/watch?v=91i7InHVOso&t=464s). 
+

@@ -1,5 +1,5 @@
 # Mini-Projects
-In here lies all the smaller projects I've worked on.
+#### In here lies all the smaller projects I've worked on.
 ```
  __        __   _                            _             
  \ \      / /__| | ___ ___  _ __ ___   ___  | |_ ___       
@@ -7,7 +7,7 @@ In here lies all the smaller projects I've worked on.
    \ V  V /  __/ | (_| (_) | | | | | |  __/ | || (_) |     
     \_/\_/ \___|_|\___\___/|_| |_| |_|\___|  \__\___/      
 
-         MINI PROJECTS
+                   MINI PROJECTS
 
 ```
-I do most of these projects for fun, so pardon me if they seem low-effort
+### I do most of these projects for fun, so pardon me if they seem low-effort

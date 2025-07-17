@@ -10,4 +10,4 @@
                    MINI PROJECTS
 
 ```
-### I do most of these projects for fun, so pardon me if they seem low-effort
+### I do most of these projects for fun, so pardon me if they seem "low-effort"

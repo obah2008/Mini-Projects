@@ -25,17 +25,24 @@ sudo apt-get update
 ```bash
 sudo apt-get install suricata
 ```
+
+
+
+```bash
 × suricata.service - Suricata IDS/IPS/NSM/FW daemon
      Loaded: loaded (/usr/lib/systemd/system/suricata.service; enabled; preset: enabled)
-     Active: failed (Result: exit-code) since Sun 2025-07-27 14:57:47 WAT; 30min ago
-   Duration: 270ms
+     Active: failed (Result: exit-code) since Sun 2025-07-27 18:16:49 WAT; 1min 20s ago
+   Duration: 559ms
        Docs: man:suricata(8)
              man:suricatasc(8)
              https://suricata.io/documentation/
-   Main PID: 118079 (code=exited, status=1/FAILURE)
-        CPU: 284ms
+    Process: 154441 ExecStartPre=/bin/rm -f /run/suricata.pid (code=exited, status=0/SUCCESS)
+    Process: 154444 ExecStart=/usr/bin/suricata --af-packet -c /etc/suricata/suricata.yaml --pidfile /run/suricata.pid --user suricata --group suricata (code=exited, status=1/FAIL>
+   Main PID: 154444 (code=exited, status=1/FAILURE)
+        CPU: 483ms
 
-Jul 27 14:57:47 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Scheduled restart job, restart counter is at>
-Jul 27 14:57:47 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Start request repeated too quickly.
-Jul 27 14:57:47 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Failed with result 'exit-code'.
-Jul 27 14:57:47 obah-VMware-Virtual-Platform systemd[1]: Failed to start suricata.service - Suricata IDS/IPS/NSM/FW dae
+Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Scheduled restart job, restart counter is at 5
+Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Start request repeated too quickly.
+Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Failed with result 'exit-code'.
+Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: Failed to start suricata.service - Suricata IDS/IPS/NSM/FW daemon.
+```

@@ -1,4 +1,4 @@
-# Intrusion detection with Surricata
+# Intrusion detection with Suricata
 
 ## Objectives: 
 The purpose of the project is to gain hands on skills with Surricata by practicing basic Incident Simulation and response. It will include the following:
@@ -14,4 +14,14 @@ Not taking to account the Hypervisor(VMware) the tools I'll be using in this pro
 
 ### Acknowledgments: This project was made possible through hackersploits Surricata guide video over on [Youtube](https://www.youtube.com/watch?v=91i7InHVOso&t=464s). 
 
-## Installing & configuring Surricata
+## Installing & configuring Suricata
+Installed Surricata and it's dependencies using the command below
+
+```bash
+sudo apt-get install software-properties-common
+sudo add-apt-repository ppa:oisf/suricata-stable
+sudo apt-get update
+```
+```bash
+sudo apt-get install suricata
+```

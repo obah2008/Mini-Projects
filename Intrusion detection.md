@@ -28,21 +28,33 @@ sudo apt-get install suricata
 
 
 
-```bash
-× suricata.service - Suricata IDS/IPS/NSM/FW daemon
-     Loaded: loaded (/usr/lib/systemd/system/suricata.service; enabled; preset: enabled)
-     Active: failed (Result: exit-code) since Sun 2025-07-27 18:16:49 WAT; 1min 20s ago
-   Duration: 559ms
-       Docs: man:suricata(8)
-             man:suricatasc(8)
-             https://suricata.io/documentation/
-    Process: 154441 ExecStartPre=/bin/rm -f /run/suricata.pid (code=exited, status=0/SUCCESS)
-    Process: 154444 ExecStart=/usr/bin/suricata --af-packet -c /etc/suricata/suricata.yaml --pidfile /run/suricata.pid --user suricata --group suricata (code=exited, status=1/FAIL>
-   Main PID: 154444 (code=exited, status=1/FAILURE)
-        CPU: 483ms
-
-Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Scheduled restart job, restart counter is at 5
+The process' exit code is 'exited' and its exit status is 1.
+Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit suricata.service has entered the 'failed' state with result 'exit-code'.
+Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Scheduled restart job, restart counter is at 5.
+░░ Subject: Automatic restarting of a unit has been scheduled
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ Automatic restarting of the unit suricata.service has been scheduled, as the result for
+░░ the configured Restart= setting for the unit.
 Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Start request repeated too quickly.
 Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: suricata.service: Failed with result 'exit-code'.
+░░ Subject: Unit failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ The unit suricata.service has entered the 'failed' state with result 'exit-code'.
 Jul 27 18:16:49 obah-VMware-Virtual-Platform systemd[1]: Failed to start suricata.service - Suricata IDS/IPS/NSM/FW daemon.
-```
+░░ Subject: A start job for unit suricata.service has failed
+░░ Defined-By: systemd
+░░ Support: http://www.ubuntu.com/support
+░░ 
+░░ A start job for unit suricata.service has finished with a failure.
+░░ 
+░░ The job identifier is 21547 and the job result is failed.
+

@@ -33,3 +33,4 @@ sudo nano /etc/suricata/suricata.yaml
 - Change af-packet interface to the network interface suricata will monitor
 - Change Home_Net to devices subnet address
 - set cross platform libpcap capture support to device interface 
+- enable community id by setting it to true

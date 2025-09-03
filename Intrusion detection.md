@@ -34,3 +34,13 @@ sudo nano /etc/suricata/suricata.yaml
 - Change Home_Net to devices subnet address
 - set cross platform libpcap capture support to device interface 
 - enable community id by setting it to true
+
+Enable rules with:
+```bash
+sudo suricata update list sources
+```
+
+To add rules use the command below
+```bash
+sudo suricata-update enable-source et/open
+```

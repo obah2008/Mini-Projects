@@ -42,5 +42,6 @@ sudo suricata update list sources
 
 To add rules use the command below
 ```bash
-sudo suricata-update enable-source et/open
+sudo suricata-update enable-source <rule_name>
 ```
+To check

@@ -35,7 +35,8 @@ sudo nano /etc/suricata/suricata.yaml
 - set cross platform libpcap capture support to device interface 
 - enable community id by setting it to true
 
-Enable rules with:
+#### Enabling rules:
+To list the rules that come with suricata use the command below
 ```bash
 sudo suricata update list sources
 ```
@@ -44,4 +45,31 @@ To add rules use the command below
 ```bash
 sudo suricata-update enable-source <rule_name>
 ```
-To check
+Update the suricata instance to include the added rules
+```
+sudo suricata-update
+```
+
+To find the rules surricata has enabled
+```bash
+ cat /var/lib/suricata/rules/suricata.rules
+```
+Run suricata in test mode to check if the configurations work
+```bash
+sudo suricata -T -c /etc/suricata/suricata.yaml -y
+```
+start suricata
+```bash
+sudo systemctl start suricata.service
+sudo systemctl status suricata.service
+```
+#### Test if suricata is working properly
+
+Use the `testmynids` url
+```bash
+curl http://testmynids.org/uid/index.html
+```
+
+```bash
+cat /var/log/suricata/fast.log
+```

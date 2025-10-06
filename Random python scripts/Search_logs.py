@@ -1,7 +1,7 @@
 import os
 
 directory = os.getcwd()
-print(directory)
+
 filename = input(f"Enter a file name in the {directory} directory: ")
 
 not_found = True

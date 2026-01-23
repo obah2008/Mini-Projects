@@ -24,5 +24,47 @@ int main(){
    return 0;
 }
 
+// practice problem 2: a simple Calculator Program
+#include <stdio.h>
+int main(){
+   
+   float Firstnum = 0.0f;
+   float secondnum = 0.0f;
+   char operator = '\0';
+   float result = 0.0f;
+
+   printf("Enter the first number: ");
+   scanf("%f", &Firstnum);
+   
+   getchar();
+   printf("Enter an operator(+,-,/,*): ");
+   scanf("%c", &operator);    
+
+   printf("Enter a second number: ");
+   scanf("%f", &secondnum);
+
+
+
+   switch(operator){
+    case '+':
+      result = Firstnum + secondnum;
+      break;
+    case '-':
+      result = Firstnum - secondnum;
+      break;
+    case '/':
+      result = Firstnum / secondnum;
+      break;
+    case '*':
+      result = Firstnum * secondnum;  
+      break;
+    default:
+      printf("Enter a valid operator");
+   }
+   printf("result: %.2f", result);
+
+   return 0;
+}
+
 
 

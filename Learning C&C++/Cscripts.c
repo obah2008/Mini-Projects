@@ -26,6 +26,8 @@ int main(){
 
 // practice problem 2: a simple Calculator Program
 #include <stdio.h>
+
+// Calculator Program
 int main(){
    
    float Firstnum = 0.0f;
@@ -53,7 +55,12 @@ int main(){
       result = Firstnum - secondnum;
       break;
     case '/':
-      result = Firstnum / secondnum;
+      if(secondnum == 0){
+        printf("You cannot divide by 0\n");
+      }
+      else{
+        result = Firstnum / secondnum;
+      }
       break;
     case '*':
       result = Firstnum * secondnum;  
@@ -65,6 +72,7 @@ int main(){
 
    return 0;
 }
+
 
 
 

@@ -74,5 +74,35 @@ int main(){
 }
 
 
+#include <stdio.h>
+#include <stdbool.h>
+
+
+int main(){
+ 
+ bool isrunning = true;
+ char response = '\0';
+
+ printf("You are playing a game\n");
+  
+ while (isrunning){
+    
+    printf("Would you like to continue: \n");
+    scanf(" %c", &response);
+    if(response == 'n' || response == 'N'){
+        isrunning = false;
+    }
+    else if(response == 'y' || response == 'Y'){
+        printf("Okay let's go again!!!\n");
+        isrunning = true;
+    }
+    else{
+        printf("Enter a valid response\n");
+    }
+ }
+ printf("Thank you for playing!");
+ return 0;
+}
+
 
 

@@ -45,8 +45,6 @@ int main(){
    printf("Enter a second number: ");
    scanf("%f", &secondnum);
 
-
-
    switch(operator){
     case '+':
       result = Firstnum + secondnum;
@@ -104,5 +102,16 @@ int main(){
  return 0;
 }
 
-
-
+// Nested Loops. A basic multiplication table
+#include <stdio.h>
+int main(){
+  for(int i = 1; i <12; i++){
+    printf("%d times table\n**************\n", i);
+    for (int j=1; j <12; j++){
+        int m = i * j;
+        printf("%d * %d = %d\n", j, i, m);
+    }
+    printf("\n");
+  }
+  printf(" Compiled successfully! ");
+}

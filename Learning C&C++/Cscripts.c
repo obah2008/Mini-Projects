@@ -115,3 +115,28 @@ int main(){
   }
   printf(" Compiled successfully! ");
 }
+// nested loops continued
+#include <stdio.h>
+
+int main(){
+  int rows = 0.0;
+  int columns = 0.0;
+  char symbol = '\0';
+  
+  printf("Enter the no of rows: ");
+  scanf("%d", &rows);
+
+  printf("Enter the no of columns: ");
+  scanf("%d", &columns);
+
+  printf("Enter a symbol: ");
+  getchar();
+  scanf("%c", &symbol);
+
+  for(int i = 0; i< rows; i++){
+    for(int j = 0; j< columns; j++){
+        printf("%c", symbol);
+    }
+    printf("\n");
+  }
+}

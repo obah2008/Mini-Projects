@@ -140,3 +140,73 @@ int main(){
     printf("\n");
   }
 }
+
+// Rock Paper Scissors
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+#include <windows.h>
+
+int getcomputerchoice(){
+    srand(time(NULL));
+
+    int choice = (rand() % 3) + 1;
+    return choice;
+
+}
+
+int getuserchoice(){
+    int choice = 0;
+    do{
+        printf("1 = Rock\n2 = Paper\n3 = Scissors\nEnter a number: ");
+        scanf("%d", &choice);
+    }while(choice < 1 || choice > 3);
+    return choice;
+    
+
+}
+
+void resultOptimized(int user, int computer){
+    if(computer == 1 && user == 1 || computer == 2 && user == 2 || computer == 3 && user == 3){
+        printf("You and the computer chose the same object\nIt's a tie");
+    }
+    else if(computer == 2 && user == 1 || computer == 1 && user == 3 || computer == 3 && user == 2){
+        printf("The computer wins!");
+    }
+    else{
+        printf(" You have won!");
+    }
+
+}
+
+
+int main(){
+
+   int Computer = getcomputerchoice();
+   int User = getuserchoice();
+
+   switch(User){
+    case 1:
+       printf("You have chosen Rock\n");
+       break;
+    case 2:
+       printf("You have chosen Paper\n");
+       break;
+    case 3:
+       printf("You have chosen Scissors\n");
+       break;
+   }
+   switch(Computer){
+    case 1:
+       printf("The Computer has chosen Rock\n");
+       break;
+    case 2:
+       printf("The Computer has chosen Paper\n");
+       break;
+    case 3:
+       printf("The Computer has chosen Scissors\n");
+       break;
+   }
+   resultOptimized(User, Computer);
+   
+}

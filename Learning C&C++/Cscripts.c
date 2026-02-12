@@ -208,7 +208,9 @@ int main(){
        break;
    }
 
-
+   resultOptimized(User, Computer);
+   
+}
    ///////////////////
    #include <stdio.h>
 #include <stdbool.h>
@@ -284,6 +286,4 @@ int main(){
     operation(500);
 }
 
-   resultOptimized(User, Computer);
-   
-}
+

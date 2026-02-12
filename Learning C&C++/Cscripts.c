@@ -207,6 +207,83 @@ int main(){
        printf("The Computer has chosen Scissors\n");
        break;
    }
+
+
+   ///////////////////
+   #include <stdio.h>
+#include <stdbool.h>
+
+// Banking program 
+
+int getoption(){
+    int input = 0;
+    scanf("%d", &input);
+    return input;
+}
+
+void operation(float balance){
+    float withdrawal = 0.0;
+    float deposit = 0.0;
+    while(true){
+        printf("\n-------ATM--------\n");
+        printf("1. Check Balance\n2. Deosit Money\n3. Withdraw Money\n4.Exit\n");
+        printf("Enter an option(select number 1-4): ");
+
+        int option = getoption();
+
+        if(option == 1){
+            printf("Your balance is $%.2f\n", balance);
+            continue;
+
+        }
+        else if(option == 2){
+            printf("Enter how much you would like to deposit: \n");
+            scanf("%f", &deposit);
+            if (deposit > 0){
+                balance = balance + deposit;
+                printf("You new balance is: %.2f\n", balance);
+                
+            }
+            else{
+                printf("Your deposit must be greater than 0\n");
+            }
+            
+            
+            
+
+
+        }
+        else if(option == 3){
+            printf("Enter how much you would like to withdraw: \n");
+            scanf("%f", &withdrawal);
+            if(withdrawal > 0 && withdrawal <= balance){
+                balance = balance - withdrawal;
+                printf("You new balance is: %.2f\n", balance);
+            }
+            else{
+                printf("You must withdraw an amount greater than 0\n");
+            }
+
+
+        }
+        else if(option == 4){
+            printf("Thank you for banking with us\n");
+            break;
+
+        }
+        else{
+            printf("\nInvalid! You can only enter a number range 1-4: \n");
+            continue;
+        }
+
+    }
+}
+
+int main(){
+
+    operation(500);
+}
+
    resultOptimized(User, Computer);
    
 }

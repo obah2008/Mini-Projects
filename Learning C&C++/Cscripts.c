@@ -249,11 +249,6 @@ void operation(float balance){
             else{
                 printf("Your deposit must be greater than 0\n");
             }
-            
-            
-            
-
-
         }
         else if(option == 3){
             printf("Enter how much you would like to withdraw: \n");

@@ -3,4 +3,5 @@ This lab will document the steps taking to install a Network based firewall on m
 
 
 
-<img width="684" height="604" alt="image" src="https://github.com/user-attachments/assets/b0083d76-fdd1-4653-991d-3d0f0f8ca3be" />
+<img width="2164" height="1476" alt="image" src="https://github.com/user-attachments/assets/bb1ba832-954b-4b99-bd58-289af35e3435" />
+
